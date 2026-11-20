@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Healthy Lifestyle · From the heart of nature</title>
+  <meta name="description" content="F.E Healthy Lifestyle S.R.L — teas, syrups and jams made from wild plants and forest fruit collected in Bucovina, Romania.">
+  <meta name="theme-color" content="#F3F0E6">
+  <!-- Keep the site out of search engines: only people with the link can find it. Remove to allow indexing. -->
+  <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+  <link rel="icon" href="images/sigle_FE.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function () {
+      var d = document.documentElement, t = null;
+      d.classList.add('js');
+      try { t = localStorage.getItem('hl-theme'); } catch (e) {}
+      if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      d.dataset.theme = t;
+    })();
+  </script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+<!-- Icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-arrow-ur" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+  <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2.5"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19c0-8 5-14 15-15-1 10-7 15-15 15z"/><path d="M5 19 13 11"/></symbol>
+  <symbol id="i-basket" viewBox="0 0 24 24"><path d="M3 10h18l-2 9a2 2 0 0 1-2 1.6H7A2 2 0 0 1 5 19z"/><path d="m8 10 3-6M16 10l-3-6M9 14v3M15 14v3M12 14v3"/></symbol>
+  <symbol id="i-jar" viewBox="0 0 24 24"><path d="M8 3h8v3H8z"/><path d="M7 6h10a1 1 0 0 1 1 1v12a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V7a1 1 0 0 1 1-1z"/><path d="M9.5 15.5c0-2.5 2-4.5 5-4.5 0 3-2 4.5-5 4.5zM9.5 15.5 12 13"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M3 6h11v10H3z"/><path d="M14 9h4l3 3v4h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3c.6 4.6 2.4 6.4 7 7-4.6.6-6.4 2.4-7 7-.6-4.6-2.4-6.4-7-7 4.6-.6 6.4-2.4 7-7z"/></symbol>
+  <symbol id="i-mountain" viewBox="0 0 24 24"><path d="M2 20 9 8l4 6 3-4 6 10z"/><path d="m7.5 10.5 1.5 1 1.5-1"/></symbol>
+</svg>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="header">
+  <div class="nav-pill">
+    <a href="#top" class="logo" aria-label="Healthy Lifestyle — home">
+      <img src="images/sigle_FE.png" alt="" width="40" height="40">
+      <span>Healthy <em>Lifestyle</em></span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#idea">Business</a>
+      <a href="#values">Values</a>
+      <a href="#store">Store</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn theme-btn" id="themeBtn" type="button" aria-label="Switch colour theme">
+        <svg class="i i-sun"><use href="#i-sun"/></svg>
+        <svg class="i i-moon"><use href="#i-moon"/></svg>
+      </button>
+      <button class="cart-btn" id="cartBtn" type="button" aria-label="Open cart">
+        <svg class="i"><use href="#i-bag"/></svg>
+        <span class="cart-label">Cart</span>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true" inert>
+  <nav aria-label="Mobile">
+    <a href="#about" style="--i:0">About</a>
+    <a href="#idea" style="--i:1">Business</a>
+    <a href="#values" style="--i:2">Values</a>
+    <a href="#store" style="--i:3">Store</a>
+    <a href="#contact" style="--i:4">Contact</a>
+  </nav>
+  <div class="mobile-menu-foot" style="--i:5">
+    <a href="mailto:fe_healthylfe@yahoo.com">fe_healthylfe@yahoo.com</a>
+    <a href="tel:+40203541215">+40 203 541 215</a>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true">
+      <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+    </div>
+
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="pill hero-in" style="--d:.05s"><span class="pulse"></span>Wild plants from Bucovina · since 2023</p>
+        <h1 class="hero-title">
+          <span class="line"><span style="--i:0">From the</span></span>
+          <span class="line"><span style="--i:1"><em>heart</em> of</span></span>
+          <span class="line"><span style="--i:2">nature.</span></span>
+        </h1>
+        <p class="hero-sub hero-in" style="--d:.55s">Organic forest fruit and medicinal plants from Bucovina, Romania, collected, processed and brought to your table as teas, syrups and jams.</p>
+        <div class="hero-cta hero-in" style="--d:.7s">
+          <a class="btn btn-primary" href="#store">Explore the store <svg class="i"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-ghost" href="#about">Our story</a>
+        </div>
+        <ul class="hero-stats hero-in" style="--d:.85s">
+          <li><b data-count="22">22</b><span>natural products</span></li>
+          <li><b data-count="100" data-suffix="%">100%</b><span>from nature</span></li>
+          <li><b data-count="3">3</b><span>ranges to explore</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-visual" id="heroVisual" aria-hidden="true">
+        <figure class="hv-card c1" data-depth="14" style="--r:-8deg; --d:.35s; --f:0s"><img src="images/healthy_tea.jpg" alt="" width="1200" height="1600"></figure>
+        <figure class="hv-card c3" data-depth="10" style="--r:9deg; --d:.5s; --f:-2s"><img src="images/wild_raspberry_jam.jpg" alt="" width="1200" height="1600"></figure>
+        <figure class="hv-card c2" data-depth="26" style="--r:2deg; --d:.65s; --f:-4s"><img src="images/seee_buckthorn_syrup.jpg" alt="" width="1200" height="1600"></figure>
+        <div class="spin-badge" data-depth="34">
+          <svg viewBox="0 0 200 200" class="spin-text">
+            <defs><path id="circ" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0"/></defs>
+            <text><textPath href="#circ" textLength="500" lengthAdjust="spacing">FROM THE HEART OF NATURE · BUCOVINA · </textPath></text>
+          </svg>
+          <img src="images/sigle_FE.png" alt="" width="200" height="200">
+        </div>
+        <div class="float-chip fc1" data-depth="44">
+          <img src="images/seee_buckthorn_syrup.jpg" alt="">
+          <span>Sea buckthorn syrup<small>200 ml</small></span><b>€5</b>
+        </div>
+        <div class="float-chip fc2" data-depth="20">
+          <img src="images/healthy_tea.jpg" alt="">
+          <span>Healthy tea<small>20 g</small></span><b>€3</b>
+        </div>
+      </div>
+    </div>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track" id="marquee">
+        <span>Rosehip</span><svg class="i"><use href="#i-leaf"/></svg>
+        <span>Elderberry</span><svg class="i"><use href="#i-leaf"/></svg>
+        <span>Sea buckthorn</span><svg class="i"><use href="#i-leaf"/></svg>
+        <span>Wild thyme</span><svg class="i"><use href="#i-leaf"/></svg>
+        <span>Fir buds</span><svg class="i"><use href="#i-leaf"/></svg>
+        <span>Wild mint</span><svg class="i"><use href="#i-leaf"/></svg>
+        <span>Blueberry</span><svg class="i"><use href="#i-leaf"/></svg>
+        <span>Cranberry</span><svg class="i"><use href="#i-leaf"/></svg>
+        <span>Wild raspberry</span><svg class="i"><use href="#i-leaf"/></svg>
+        <span>Blackberry</span><svg class="i"><use href="#i-leaf"/></svg>
+        <span>Dandelion</span><svg class="i"><use href="#i-leaf"/></svg>
+        <span>Black currant</span><svg class="i"><use href="#i-leaf"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <p class="eyebrow" data-reveal>Who we are</p>
+      <p class="statement" id="statement">Healthy Lifestyle Virtual Company is about the <em>precious gifts</em> that nature offers to us, the fascinating human connection with it, and the <em>magic bond</em> between people and nature.</p>
+
+      <div class="about-grid">
+        <div class="about-media" data-reveal>
+          <div class="about-frame">
+            <img class="about-logo" src="images/sigle_FE.png" alt="Healthy Lifestyle logo: mountains and green meadows" loading="lazy" width="1800" height="1800">
+          </div>
+          <figure class="about-photo">
+            <img src="images/fir_buds_tea.jpg" alt="A jar of fir buds tea" loading="lazy" width="1200" height="1600">
+          </figure>
+        </div>
+        <div class="about-copy" data-reveal style="--delay:.12s">
+          <p class="about-lead">This virtual company was founded to promote a natural, healthy, and balanced diet, so that people always feel connected to nature, its richness, and its beauties.</p>
+          <ul class="feature-list">
+            <li><span class="f-ico"><svg class="i"><use href="#i-leaf"/></svg></span><div><b>100% natural products</b><span>Nothing but what the forest gives.</span></div></li>
+            <li><span class="f-ico"><svg class="i"><use href="#i-mountain"/></svg></span><div><b>Wild plants from Bucovina</b><span>Forest fruit and medicinal plants from northern Romania.</span></div></li>
+            <li><span class="f-ico"><svg class="i"><use href="#i-spark"/></svg></span><div><b>Balanced, healthy diet</b><span>Simple products for everyday wellbeing.</span></div></li>
+          </ul>
+          <a class="link-arrow" href="#store">See what we make <svg class="i"><use href="#i-arrow-ur"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BUSINESS IDEA ============ -->
+  <section class="section idea dark" id="idea">
+    <div class="container">
+      <div class="section-head split">
+        <div>
+          <p class="eyebrow" data-reveal>The business idea</p>
+          <h2 class="h2" data-reveal>From the forests of <em>Bucovina</em>, to the forefront.</h2>
+        </div>
+        <p class="lead" data-reveal style="--delay:.1s">Healthy Lifestyle Virtual Company is a Romanian business with exclusive private ownership. Our main activities include collecting, processing, and distributing organic forest fruit and medicinal plants.</p>
+      </div>
+
+      <div class="bento">
+        <article class="bento-card zero" data-reveal>
+          <span class="tag tag-lime">Point zero</span>
+          <b class="year" data-count="2023" data-plain>2023</b>
+          <p>2023 marks the beginning of our journey into the world of wild plants from Bucovina. We aim to bring the natural riches of this region to the forefront.</p>
+          <svg class="zero-mtn" viewBox="0 0 400 140" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0 140 L70 62 L112 96 L172 24 L232 90 L272 58 L332 108 L400 48 V140Z" fill="rgba(198,224,112,.07)" stroke="rgba(198,224,112,.45)" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+            <path d="M0 140 L90 96 L150 120 L222 80 L302 116 L400 86 V140Z" fill="rgba(198,224,112,.10)"/>
+          </svg>
+        </article>
+        <article class="bento-card step" data-reveal style="--delay:.08s">
+          <span class="step-num">01</span>
+          <span class="step-ico"><svg class="i"><use href="#i-basket"/></svg></span>
+          <h3>Collecting</h3>
+          <p>Organic forest fruit and medicinal plants, gathered from the wild landscapes of Bucovina.</p>
+        </article>
+        <article class="bento-card step" data-reveal style="--delay:.16s">
+          <span class="step-num">02</span>
+          <span class="step-ico"><svg class="i"><use href="#i-jar"/></svg></span>
+          <h3>Processing</h3>
+          <p>Turned into teas, syrups and jams while staying 100% natural.</p>
+        </article>
+        <article class="bento-card step" data-reveal style="--delay:.08s">
+          <span class="step-num">03</span>
+          <span class="step-ico"><svg class="i"><use href="#i-truck"/></svg></span>
+          <h3>Distributing</h3>
+          <p>Brought to people who choose a natural, healthy and balanced diet.</p>
+        </article>
+        <article class="bento-card owned" data-reveal style="--delay:.16s">
+          <span class="ro">RO</span>
+          <p><b>Romanian business</b>with exclusive private ownership, rooted in Fălticeni, Suceava.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VISION / MISSION / VALUES ============ -->
+  <section class="section values" id="values">
+    <div class="container">
+      <div class="section-head center">
+        <p class="eyebrow" data-reveal>Vision · Mission · Values</p>
+        <h2 class="h2" data-reveal>What <em>guides</em> us</h2>
+      </div>
+
+      <div class="vm-grid">
+        <article class="vm-card" data-reveal>
+          <div class="vm-top"><span class="vm-ico"><svg class="i"><use href="#i-eye"/></svg></span><span class="vm-label">Our vision</span></div>
+          <p class="vm-text">We offer people effective and healthy herbal remedies, to return and multiply the good that nature does for us.</p>
+        </article>
+        <article class="vm-card mission" data-reveal style="--delay:.1s">
+          <div class="vm-top"><span class="vm-ico"><svg class="i"><use href="#i-compass"/></svg></span><span class="vm-label">Our mission</span></div>
+          <p class="vm-text">To offer 100% natural products, respecting the natural potential of the area and meeting customer demands for a sustainable, quality lifestyle.</p>
+        </article>
+      </div>
+
+      <div class="values-list">
+        <p class="eyebrow" data-reveal>Our values</p>
+        <ul>
+          <li class="value" data-reveal><span class="v-num">01</span><span class="v-word">Quality</span><svg class="i v-ico"><use href="#i-spark"/></svg></li>
+          <li class="value" data-reveal><span class="v-num">02</span><span class="v-word">Authenticity</span><svg class="i v-ico"><use href="#i-spark"/></svg></li>
+          <li class="value" data-reveal><span class="v-num">03</span><span class="v-word">Honesty</span><svg class="i v-ico"><use href="#i-spark"/></svg></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STORE ============ -->
+  <section class="section store" id="store">
+    <div class="container">
+      <div class="section-head split">
+        <div>
+          <p class="eyebrow" data-reveal>Online store</p>
+          <h2 class="h2" data-reveal>Taste the <em>mountains</em></h2>
+        </div>
+        <p class="lead" data-reveal style="--delay:.1s">Teas, syrups and jams made from wild plants and forest fruit. Tap any product for details, or add it straight to your cart.</p>
+      </div>
+
+      <div class="toolbar" data-reveal>
+        <div class="segmented" id="filters" role="tablist" aria-label="Product range">
+          <span class="seg-indicator" aria-hidden="true"></span>
+          <button type="button" role="tab" data-cat="all" aria-selected="true">All <span class="count"></span></button>
+          <button type="button" role="tab" data-cat="tea" aria-selected="false">Teas <span class="count"></span></button>
+          <button type="button" role="tab" data-cat="syrup" aria-selected="false">Syrups <span class="count"></span></button>
+          <button type="button" role="tab" data-cat="jam" aria-selected="false">Jams <span class="count"></span></button>
+        </div>
+        <label class="search">
+          <svg class="i"><use href="#i-search"/></svg>
+          <input type="search" id="search" placeholder="Search products" aria-label="Search products" autocomplete="off">
+        </label>
+      </div>
+
+      <div class="product-grid" id="grid" aria-live="polite"></div>
+      <div class="empty-state" id="emptyState" hidden>
+        <svg class="i"><use href="#i-leaf"/></svg>
+        <p>No products match “<span id="emptyQuery"></span>”.</p>
+        <button class="btn btn-ghost" type="button" id="clearSearch">Clear search</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-copy">
+        <p class="eyebrow" data-reveal>Contact us</p>
+        <h2 class="h2" data-reveal>Let’s talk <em>nature</em>.</h2>
+        <p class="lead" data-reveal>Want more information about our products or about our virtual company at Vasile Lovinescu College? Get in touch. We’d love to hear from you.</p>
+
+        <ul class="contact-list" data-reveal>
+          <li>
+            <a href="mailto:fe_healthylfe@yahoo.com"><span class="c-ico"><svg class="i"><use href="#i-mail"/></svg></span><span><small>Email</small>fe_healthylfe@yahoo.com</span></a>
+            <button class="copy-btn" type="button" data-copy="fe_healthylfe@yahoo.com" aria-label="Copy email address"><svg class="i"><use href="#i-copy"/></svg></button>
+          </li>
+          <li>
+            <a href="tel:+40203541215"><span class="c-ico"><svg class="i"><use href="#i-phone"/></svg></span><span><small>Phone</small>+40 203 541 215</span></a>
+            <button class="copy-btn" type="button" data-copy="+40 203 541 215" aria-label="Copy phone number"><svg class="i"><use href="#i-copy"/></svg></button>
+          </li>
+          <li>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Strada+Maior+Ioan+10%2C+F%C4%83lticeni+725200%2C+Romania" target="_blank" rel="noopener"><span class="c-ico"><svg class="i"><use href="#i-pin"/></svg></span><span><small>Address</small>10 Maior Ioan, 725200 Fălticeni, Suceava, Romania</span></a>
+            <button class="copy-btn" type="button" data-copy="725200, Falticeni, 10 Maior Ioan, Suceava, Romania" aria-label="Copy address"><svg class="i"><use href="#i-copy"/></svg></button>
+          </li>
+        </ul>
+
+        <form class="contact-form" id="contactForm" data-reveal>
+          <div class="field-row">
+            <label class="field"><span>Name</span><input name="name" required autocomplete="name" placeholder="Your name"></label>
+            <label class="field"><span>Email</span><input name="email" type="email" required autocomplete="email" placeholder="you@example.com"></label>
+          </div>
+          <label class="field"><span>Message</span><textarea name="message" required rows="4" placeholder="How can we help?"></textarea></label>
+          <button class="btn btn-primary" type="submit">Send message <svg class="i"><use href="#i-arrow"/></svg></button>
+        </form>
+      </div>
+
+      <div class="map-card" data-reveal style="--delay:.12s">
+        <iframe title="Map: 10 Maior Ioan, Fălticeni" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Strada+Maior+Ioan+10,+F%C4%83lticeni+725200,+Romania&amp;z=15&amp;output=embed"></iframe>
+        <div class="map-label"><svg class="i"><use href="#i-pin"/></svg> Fălticeni, Suceava · Romania</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/sigle_FE.png" alt="" width="72" height="72" loading="lazy">
+        <p>“From the heart of nature”</p>
+      </div>
+      <div class="footer-col">
+        <p class="eyebrow">Explore</p>
+        <a href="#about">Who we are</a><a href="#idea">Business idea</a><a href="#values">Vision &amp; values</a><a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <p class="eyebrow">Shop</p>
+        <a href="#store" data-filter="tea">Teas</a><a href="#store" data-filter="syrup">Syrups</a><a href="#store" data-filter="jam">Jams &amp; jellies</a><a href="#store" data-filter="all">All products</a>
+      </div>
+      <div class="footer-col">
+        <p class="eyebrow">Reach us</p>
+        <a href="mailto:fe_healthylfe@yahoo.com">fe_healthylfe@yahoo.com</a><a href="tel:+40203541215">+40 203 541 215</a><span>Fălticeni, Suceava, Romania</span>
+      </div>
+    </div>
+    <p class="wordmark" aria-hidden="true">Healthy <em>Lifestyle</em></p>
+    <div class="footer-bottom">
+      <span>© 2024 F.E Healthy Lifestyle S.R.L</span>
+      <span>Store by Vasile Lovinescu College</span>
+      <button class="to-top" id="toTop" type="button">Back to top <svg class="i"><use href="#i-arrow-up"/></svg></button>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ QUICK VIEW ============ -->
+<dialog class="qv" id="quickView" aria-labelledby="qvName">
+  <button class="icon-btn qv-close" type="button" data-close-qv aria-label="Close"><svg class="i"><use href="#i-close"/></svg></button>
+  <div class="qv-media"><img id="qvImg" alt="" width="1200" height="1600"></div>
+  <div class="qv-body">
+    <span class="tag" id="qvCat"></span>
+    <h3 id="qvName"></h3>
+    <p class="qv-meta"><span id="qvPrice"></span><span class="sep"></span><span id="qvSize"></span></p>
+    <p class="qv-desc" id="qvDesc"></p>
+    <div class="qv-actions">
+      <div class="stepper" aria-label="Quantity">
+        <button type="button" data-step="-1" aria-label="Decrease quantity"><svg class="i"><use href="#i-minus"/></svg></button>
+        <output id="qvQty">1</output>
+        <button type="button" data-step="1" aria-label="Increase quantity"><svg class="i"><use href="#i-plus"/></svg></button>
+      </div>
+      <button class="btn btn-primary" type="button" id="qvAdd">Add to cart · <span id="qvTotal"></span></button>
+    </div>
+    <ul class="qv-points">
+      <li><svg class="i"><use href="#i-check"/></svg>100% natural</li>
+      <li><svg class="i"><use href="#i-check"/></svg>Wild plants &amp; forest fruit from Bucovina</li>
+      <li><svg class="i"><use href="#i-check"/></svg>Made in Romania</li>
+    </ul>
+  </div>
+</dialog>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" data-view="cart" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" aria-hidden="true" inert>
+  <div class="drawer-head">
+    <button class="icon-btn back-btn" type="button" id="backToCart" aria-label="Back to cart"><svg class="i"><use href="#i-arrow-left"/></svg></button>
+    <h3 id="drawerTitle">Your cart</h3>
+    <button class="icon-btn" type="button" id="closeDrawer" aria-label="Close cart"><svg class="i"><use href="#i-close"/></svg></button>
+  </div>
+
+  <!-- cart view -->
+  <div class="drawer-view" data-for="cart">
+    <div class="cart-items" id="cartItems"></div>
+    <div class="drawer-foot">
+      <div class="sum-row"><span>Subtotal</span><b id="subtotal">€0</b></div>
+      <p class="muted small">Orders are sent to us by email, so no online payment is needed.</p>
+      <button class="btn btn-primary block" type="button" id="toCheckout">Checkout <svg class="i"><use href="#i-arrow"/></svg></button>
+    </div>
+  </div>
+
+  <!-- checkout view -->
+  <form class="drawer-view checkout" data-for="checkout" id="checkoutForm" novalidate>
+    <div class="checkout-body">
+      <div class="order-summary" id="orderSummary"></div>
+      <label class="field"><span>Full name</span><input name="name" required autocomplete="name"></label>
+      <div class="field-row">
+        <label class="field"><span>Phone</span><input name="phone" type="tel" required autocomplete="tel"></label>
+        <label class="field"><span>Email</span><input name="email" type="email" required autocomplete="email"></label>
+      </div>
+      <label class="field"><span>Delivery address</span><textarea name="address" rows="2" required autocomplete="street-address"></textarea></label>
+      <label class="field"><span>Note <i>(optional)</i></span><textarea name="note" rows="2"></textarea></label>
+    </div>
+    <div class="drawer-foot">
+      <div class="sum-row"><span>Total</span><b id="checkoutTotal">€0</b></div>
+      <button class="btn btn-primary block" type="submit">Place order <svg class="i"><use href="#i-check"/></svg></button>
+    </div>
+  </form>
+
+  <!-- done view -->
+  <div class="drawer-view done" data-for="done">
+    <svg class="done-check" viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="36"/><path d="m25 41 10 10 21-22"/></svg>
+    <h4>Thank you!</h4>
+    <p class="order-no">Order <b id="orderNo"></b></p>
+    <p class="muted">Your email app should open with the order filled in. Press send and we’ll get back to you to confirm it.</p>
+    <a class="btn btn-ghost" id="resendMail" href="#">Open the email again</a>
+    <button class="btn btn-primary" type="button" id="keepShopping">Keep shopping</button>
+  </div>
+</aside>
+
+<div class="toasts" id="toasts" aria-live="polite"></div>
+
+</body>
+</html>
